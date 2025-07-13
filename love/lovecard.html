@@ -2,8 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Love Card for Stef</title>  <!-- browser tab title -->
   <link rel="icon" href="heart.png" type="image/png" />
+  <title>Love Card for Stef</title>  <!-- browser tab title -->
+  <!-- password -->
+  <script> 
+    function checkPassword() {
+      const password = prompt("🧸 please enter the name of this teddy bear:");
+      if (password === "Steffi") {
+        document.getElementById("content").style.display = "block";
+      } else {
+        alert("you don't love us💔");
+        window.location.href = "https://google.com"; /* redirect to other webpage */
+      }
+    }
+    window.onload = checkPassword;
+  </script>
+
   <!-- Embedded CSS: defines the visual styles of the page -->
   <style> 
     /* --- Basic styling for the page --- */
