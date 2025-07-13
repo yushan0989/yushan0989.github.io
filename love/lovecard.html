@@ -20,9 +20,6 @@
 
   <!-- Embedded CSS: defines the visual styles of the page -->
   <style> 
-    #content {
-  display: none;
-    }
     /* --- Basic styling for the page --- */
     body {
       background: #fff0f5;
@@ -84,13 +81,15 @@
     }
   </style>
 </head>
+<!-- Embedded CSS: defines the content of the page -->
 <body>
-  <div class="card">
-    <!-- Clickable heart -->
-    <div class="heart" onclick="bounceHeart(this)">💗</div>
-
-    <!-- Where the typing message appears -->
-    <div class="message" id="message"></div>
+  <div id="content" style="display: none;">
+    <div class="card">
+      <!-- Clickable heart -->
+      <div class="heart" onclick="bounceHeart(this)">💗</div>
+      <!-- Where the typing message appears -->
+      <div class="message" id="message"></div>
+    </div>
   </div>
 
   <script>
